@@ -1,0 +1,104 @@
+body {
+    background-image: linear-gradient(to right, rgb(0, 247, 255), rgb(145, 200, 82));
+    margin: 32px 0 0 0;
+}
+
+.main {
+    background: #fff;
+    padding: 14px 0 0 0;
+    border-radius: 19px;
+    width: 34vw;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .row {
+    display: flex;
+    gap: 23px;
+    padding: 14px 4px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main button {
+    padding: 20px 32px;
+    border: 1px solid rgb(202, 201, 201);
+    background-color: rgb(227, 225, 225);
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(186, 186, 186, 0.444);
+    cursor: pointer;
+    font-size: 21px;
+    transition: all 0.1s ease-in;
+}
+
+.main button:hover {
+    box-shadow: 9px 7px 5px rgba(98, 95, 95, 0.248);
+}
+
+.main button:focus {
+    border: 1px solid black;
+}
+
+.result {
+    margin-bottom: 5px;
+    background-color: black;
+    width: 93%;
+    height: 60px;
+    border-radius: 14px;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button.op {
+    background-color: orange;
+}
+
+/* media queries */
+@media (max-width: 1200px) {
+    .main {
+        width: 50vw;
+    }
+
+    .main button {
+        padding: 18px 28px;
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 800px) {
+    .main {
+        width: 70vw;
+    }
+
+    .main button {
+        padding: 16px 24px;
+        font-size: 18px;
+    }
+
+    .result {
+        font-size: large;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: auto;
+    }
+
+    .main {
+        width: 90vw;
+    }
+
+    .main button {
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+
+    .result {
+        font-size: medium;
+    }
+}
